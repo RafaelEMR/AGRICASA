@@ -1,0 +1,92 @@
+.welcome-section {
+
+    background-image: url("/img/portada.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* Establece la altura al 100% de la ventana gráfica */
+    position: relative;
+    z-index: 1;
+    /* Asegura que esta capa esté por detrás de todo */
+}
+
+.welcome-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    /* Asegura que esta capa esté por encima de la imagen de fondo */
+}
+
+.welcome-text h1 {
+    color: #ffffff;
+    font-size: 100px;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0px;
+    bottom: 0px;
+    /* Asegura que el texto esté por encima de la capa oscura */
+}
+/* Define la animación de fade */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Comienza completamente transparente */
+    }
+    100% {
+        opacity: 1; /* Termina completamente visible */
+    }
+}
+
+/* Aplica la animación a la clase "fade-in" */
+.fade-in {
+    animation: fadeIn 2.5s; /* Ajusta la duración de la animación según tus preferencias */
+}
+
+
+.welcome-text p {
+    color: #ffffff;
+    font-size: 25px;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    animation: slide-up 1.5s ease;
+    /* Centra verticalmente el texto */
+}
+
+  .inner {
+    overflow: hidden;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: TranslateY(250px)
+    }
+    100% {
+      transform: TranslateY(0px)
+    }
+  }
+
+.hrr {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.transparent-navbar {
+    background-color: rgba(255, 255, 255, 0);
+    /* Establece el color de fondo transparente */
+    backdrop-filter: blur(10px);
+    /* Añade un desenfoque al fondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra sutíl */
+    color: white;
+    /* Cambia el color de las letras a blanco */
+    font-family: 'Titillium Web', sans-serif;
+}
