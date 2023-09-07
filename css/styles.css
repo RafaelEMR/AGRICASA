@@ -1,15 +1,3 @@
-.welcome-section {
-
-    background-image: url(portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    /* Establece la altura al 100% de la ventana gráfica */
-    position: relative;
-    z-index: 1;
-    /* Asegura que esta capa esté por detrás de todo */
-}
 
 .welcome-overlay {
     background-color: rgba(0, 0, 0, 0.7);
