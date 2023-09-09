@@ -16,25 +16,6 @@ h1 {
   color: #333;
 }
 
-/* Estilos para la barra de navegación */
-.navbar {
-  background-color: #343a40;
-}
-
-.navbar-brand {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.navbar-nav .nav-link {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.navbar-toggler-icon {
-  background-color: #ffffff;
-}
 
 /* Estilos para el formulario de contacto */
 .contact-form {
