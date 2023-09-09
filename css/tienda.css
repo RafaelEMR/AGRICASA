@@ -1,9 +1,10 @@
 body {
-  background-color: #f6f6f6;
+  background-image: url("../img/white-wall.png");
 }
 
 .product-card {
-  border: 1px solid #a7a7a7;
+  background-color: #ffffff;
+  border: 1px solid #0000;
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
