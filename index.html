@@ -1,96 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Agricasa</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="../AGRICASA/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <!-- Barra de navegación -->
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-dark transparent-navbar"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../AGRICASA/tienda/tienda.html"
-                >Tienda</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Acerca_de.html">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../AGRICASA/contacto/contacto.html"
-                >Contacto</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div id="cart-summary" class="ml-auto">
-          <a href="carrito.html" class="btn btn-outline-light">
-            <i class="fas fa-shopping-cart"></i> Carrito (<span id="cart-count"
-              >0</span
-            >)
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Agricasa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="../AGRICASA/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark transparent-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tienda.html">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Acerca_de.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!--Portada-->
-    <div class="welcome-section">
-      <div class="welcome-overlay">
-        <div class="welcome-text">
-          <h1 class="fade-in">AGRICASA</h1>
-          <hr class="hr bg-light hr-blurry hrr" />
-          <div class="container">
-            <div class="inner">
-              <p>Lo mejor del campo a tu cocina</p>
-            </div>
+      <div id="cart-summary" class="ml-auto">
+        <a href="carrito.html" class="btn btn-outline-light">
+          <i class="fas fa-shopping-cart"></i> Carrito (<span id="cart-count">0</span>)
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!--Portada-->
+  <div class="welcome-section">
+    <div class="welcome-overlay">
+      <div class="welcome-text">
+        <h1 class="fade-in">AGRICASA</h1>
+        <hr class="hr bg-light hr-blurry hrr" />
+        <div class="container">
+          <div class="inner">
+            <p>Lo mejor del campo a tu cocina</p>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </body>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/tienda.css" />
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light transparent-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Acerca_de.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div id="cart-summary" class="ml-auto">
+        <a href="carrito.html" class="btn btn-outline-dark">
+          <i class="fas fa-shopping-cart"></i> Carrito (<span id="cart-count">0</span>)
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container cards-container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Painted_Pony_Bean.JPG/1200px-Painted_Pony_Bean.JPG"
+            alt="Product 1" class="product-image" />
+          <h5 class="mt-3">Frijoles</h5>
+          <p></p>
+          <p>Precio: L.119.99</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Frijoles" data-item-price="119.99">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/VegCorn.jpg" alt="Product 2"
+            class="product-image" />
+          <h5 class="mt-3">Elote</h5>
+          <p></p>
+          <p>Precio L109.99</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Elote" data-item-price="109.99">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Cavendish_banana_from_Maracaibo.jpg/800px-Cavendish_banana_from_Maracaibo.jpg"
+            alt="Product 3" class="product-image" />
+          <h5 class="mt-3">Platano</h5>
+          <p></p>
+          <p>Precio L90.00</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Platano" data-item-price="90.00">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+      <!-- The following three cards will appear below the first row -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPYHZ3Zp9clVeAGFhb8J12Ss6C1LFUX3EFXuv7Q7I58BU8e2XFuRIQKrE_hcNxZExrHy0&usqp=CAU"
+            alt="Product 4" class="product-image" />
+          <h5 class="mt-3">Cafe</h5>
+          <p></p>
+          <p>Precio L.119.00</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Cafe" data-item-price="119.00">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://recetasyuca.com/wp-content/uploads/2022/10/10-Beneficios-de-la-Yuca.jpg" alt="Product 1"
+            class="product-image" />
+          <h5 class="mt-3">Yuca</h5>
+          <p></p>
+          <p>Precio L.80.00</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Yuca" data-item-price="80.00">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://www.maxionline.ec/wp-content/uploads/2020/08/pinia-el-sabor-de-la-frecura.jpg"
+            alt="Product 1" class="product-image" />
+          <h5 class="mt-3">Piña</h5>
+          <p></p>
+          <p>Precio L.49.99</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Piña" data-item-price="49.99">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5bshwGb2HWYVvvIOXH8onoWr2SO0O0M6wbQ&usqp=CAU"
+            alt="Product 4" class="product-image" />
+          <h5 class="mt-3">Aguacate</h5>
+          <p></p>
+          <p>Precio L.34.99</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Aguacate" data-item-price="34.99">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://elpoderdelconsumidor.org/wp-content/uploads/2022/02/naranja-1.jpg" alt="Product 1"
+            class="product-image" />
+          <h5 class="mt-3">Naranja</h5>
+          <p></p>
+          <p>Precio L.44.99</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Naranja" data-item-price="44.99">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://www.bupasalud.com/sites/default/files/inline-images/fuji-red.jpg" alt="Product 1"
+            class="product-image" />
+          <h5 class="mt-3">Manzana</h5>
+          <p></p>
+          <p>Precio L.29.99</p>
+          <a href="#" class="btn btn-primary add-to-cart" data-item-name="Manzana" data-item-price="29.99">
+            Agregar al carrito
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3 footer">
+    <div class="container">
+      <p>Derechos de autor &copy; 2023 | Arboreo</p>
+      <a class="footer-link" href="" target="_blank">Whatsapp</a>
+      <a class="footer-link" href="" target="_blank">Facebook</a>
+      <a class="footer-link" href="" target="_blank">Instagram</a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/tienda.js"></script>
+</body>
+
+</html>
