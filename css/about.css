@@ -24,7 +24,7 @@
 }
 
 .welcome-text h1 {
-    color: #ffffff;
+    color: #000;
     font-size: 100px;
     position: relative;
     font-family: 'Bebas Neue', sans-serif;
@@ -37,7 +37,7 @@
         opacity: 0; 
     }
     100% {
-        opacity: 1;
+        opacity: 1; 
     }
 }
 
@@ -47,31 +47,13 @@
 
 
 .welcome-text p {
-    color: #ffffff;
-    font-size: 25px;
+    color: #000;
+    font-size: 16px;
     position: relative;
     font-family: 'Titillium Web', sans-serif;
     display: flex;
-    animation: slide-up 1.5s ease;
 }
 
-  .inner {
-    overflow: hidden;
-  }
-  
-  @keyframes slide-up {
-    0% {
-      transform: TranslateY(250px)
-    }
-    100% {
-      transform: TranslateY(0px)
-    }
-  }
-
-.hrr {
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
 
 .transparent-navbar {
     background-color: rgba(255, 255, 255, 0);
@@ -79,4 +61,55 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
     font-family: 'Titillium Web', sans-serif;
+}
+
+/*ACERCA-DE*/
+.about-section {
+
+    background-image: url("/img/white-wall.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  .footer{
+    background-color: #829460 !important;
+  }
+  .footer-link {
+    color: #F2E3DB;
+  }
+  .footer-link p{
+    color: #F2E3DB;
+  }
+.head_about{
+    color: #000;
+    font-size: 100px;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0px;
+    bottom: 0px;
+    font-size: 50px !important;
+    
+}
+.uhead_about{
+    color: #000;
+    font-size: 25px;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0px;
+    bottom: 0px;
 }
