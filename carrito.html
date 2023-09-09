@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Agricasa</title>
+    <title>Carrito | Agricasa</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,20 +14,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #cart-items {
+            display: none;
+        }
+        .head{
+            margin-top: 100px;
+        }
+        #alertCart{
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark transparent-navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light transparent-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Tienda</a>
@@ -41,29 +54,46 @@
                 </ul>
             </div>
             <div id="cart-summary" class="ml-auto">
-                <a href="carrito.html" class="btn btn-outline-light">
+                <a href="carrito.html" class="btn btn-outline-dark">
                     <i class="fas fa-shopping-cart"></i> Carrito (<span id="cart-count">0</span>)
                 </a>
             </div>
         </div>
     </nav>
-    <!--Portada-->
-    <div class="welcome-section">
-        <div class="welcome-overlay">
-            <div class="welcome-text">
-                <h1 class="fade-in">AGRICASA</h1>
-                <hr class="hr bg-light hr-blurry hrr" />
-                <div class="container">
-                    <div class="inner">
-                        <p>Lo mejor del campo a tu cocina</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Contenido del carrito -->
+    <div class="container mt-5">
+        <h2 class="head">Carrito de Compras</h2>
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cart-table">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>Impuesto (12.5%)</td>
+                    <td id="cart-tax">Lps. 0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>Total</td>
+                    <td id="cart-grand-total">Lps. 0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <a id="alertCart" href="#" class="btn btn-primary">Pagar</a>
+        <button id="clear-cart-button" class="btn btn-danger">Vaciar Carrito</button>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 
 </html>
