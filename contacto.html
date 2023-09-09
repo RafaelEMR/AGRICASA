@@ -13,8 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.26/"></script>
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="../AGRICASA/favicon.ico" type="image/x-icon" />  <!-- Estilo personalizado para la página de contacto -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <!-- Estilo personalizado para la página de contacto -->
   <link rel="stylesheet" href="css/contacto.css" />
 </head>
 
@@ -88,9 +91,14 @@
           ¡Estamos aquí para ayudarte! Si tienes alguna pregunta o comentario,
           no dudes en contactarnos.
         </p>
+        <section class="map-section">
+          <div id="map" style="height: 300px;"></div>
+      </section>
       </div>
     </div>
   </div>
+  <script src="js/map.js">
+  </script>
   <footer class="bg-dark text-white text-center py-3 footer">
     <div class="container2">
       <p>Derechos de autor &copy; 2023 | Agricasa</p>
@@ -99,6 +107,7 @@
       <a class="footer-link" href="" target="_blank">Instagram</a>
     </div>
   </footer>
+  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
