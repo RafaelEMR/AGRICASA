@@ -72,3 +72,12 @@ h1 {
 .btn-primary:hover {
   background-color: #0056b3;
 }
+.footer{
+  background-color: #829460 !important;
+}
+.footer-link {
+  color: #F2E3DB;
+}
+.footer-link p{
+  color: #F2E3DB;
+}
